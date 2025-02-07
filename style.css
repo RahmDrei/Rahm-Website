@@ -1,65 +1,33 @@
-/* Add your CSS code here */
-:root {
-    --bg-gray-900: #1a202c;
-    --bg-blue-50: #ebf8ff;
-    --bg-gray-800: #2d3748;
-    --bg-white: #ffffff;
-    --text-white: #ffffff;
-    --text-gray-800: #1a202c;
-    --bg-blue-600: #3182ce;
-    --bg-blue-700: #2b6cb0;
-    --bg-blue-500: #4299e1;
-    --bg-gray-200: #edf2f7;
-    --text-green-400: #48bb78;
-    --text-green-500: #38a169;
-}
 
-/* Add your styles from the component */
-body, html, #root {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
+        {`
+          @keyframes slideIn {
+            from {
+              opacity: 0;
+              transform: translateX(100%);
+            }
+            to {
+              opacity: 1;
+              transform: translateX(0);
+            }
+          }
 
-.fixed {
-    position: fixed;
-}
+          @keyframes slideOut {
+            from {
+              opacity: 1;
+              transform: translateX(0);
+            }
+            to {
+              opacity: 0;
+              transform: translateX(100%);
+            }
+          }
 
-.inset-0 {
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
+          .notification-enter {
+            animation: slideIn 0.5s ease forwards;
+          }
 
-/* ... other classes */
-
-.notification-enter {
-    animation: slideIn 0.5s ease forwards;
-}
-
-.notification-exit {
-    animation: slideOut 0.5s ease forwards;
-}
-
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideOut {
-    from {
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-}
+          .notification-exit {
+            animation: slideOut 0.5s ease forwards;
+          }
+        `}
+      
