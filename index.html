@@ -3,94 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rahm Website - Your Roblox Scripts and Community Hub">
-    <title>Rahm Website</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>Enhanced Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="light-mode">
-    <!-- Loading Screen -->
-    <div class="loading-screen">
-        <div class="loading-spinner"></div>
-    </div>
-
-    <!-- Alert -->
-    <div id="customAlert" class="custom-alert" role="alert"></div>
-
-    <!-- Mobile Menu -->
-    <div id="mobileMenu" class="mobile-menu">
-        <button class="close-menu" id="closeMenu">
-            <i class="fas fa-times"></i>
-        </button>
-        <div class="mobile-menu-content">
-            <button class="mobile-button" onclick="joinDiscord()">
-                <i class="fab fa-discord"></i>
-                Discord
-            </button>
-            <button class="mobile-button" onclick="getScripts()">
-                <i class="fas fa-code"></i>
-                Scripts
-            </button>
-            <button class="mobile-button" onclick="joinGroup()">
-                <i class="fas fa-users"></i>
-                Roblox Group
-            </button>
-        </div>
-    </div>
-
-    <!-- Header -->
-    <header class="header">
-        <h1 class="website-title">Rahm|Website</h1>
-        <div class="header-controls">
-            <button id="themeToggle" class="theme-toggle">
-                <i class="fas fa-sun"></i>
-            </button>
-            <span class="version">Version 0.1</span>
-            <button id="menuToggle" class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </header>
-
-    <!-- Main Content -->
-    <main class="container-main">
-        <div class="container-card">
-            <i class="fab fa-discord card-icon"></i>
-            <h2 class="card-head">Discord</h2>
-            <p class="card-label">Join Our Discord Server for More Scripts, Updates, and Community Interaction!</p>
-            <button class="button" onclick="joinDiscord()">
-                <i class="fab fa-discord"></i>
-                Join Discord
-            </button>
-        </div>
-
-        <div class="container-card">
-            <i class="fas fa-code card-icon"></i>
-            <h2 class="card-head">Scripts</h2>
-            <p class="card-label">Access Our Collection of High-Quality Scripts!</p>
-            <button class="button" onclick="getScripts()">
-                <i class="fas fa-code"></i>
-                Get Scripts
-            </button>
-        </div>
-
-        <div class="container-card">
-            <i class="fas fa-users card-icon"></i>
-            <h2 class="card-head">Roblox Group</h2>
-            <p class="card-label">Join Our Roblox Community Group for Quick Updates and Exclusive Content!</p>
-            <button class="button" onclick="joinGroup()">
-                <i class="fas fa-users"></i>
-                Join Group
-            </button>
-        </div>
-    </main>
-
-    <!-- Changelog Button -->
-    <button class="button changelog-button" onclick="showChangelog()">
-        <i class="fas fa-history"></i>
-        ChangeLogs
-    </button>
-
+<body>
+    <div id="root"></div>
     <script src="script.js"></script>
 </body>
 </html>
