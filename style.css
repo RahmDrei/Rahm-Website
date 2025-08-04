@@ -1,33 +1,60 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(circle at center, #0a0a1a, #000010);
+  color: white;
+  overflow: hidden;
+}
 
-        {`
-          @keyframes slideIn {
-            from {
-              opacity: 0;
-              transform: translateX(100%);
-            }
-            to {
-              opacity: 1;
-              transform: translateX(0);
-            }
-          }
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(20, 20, 40, 0.8);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px #6e00ff88;
+  text-align: center;
+  width: 300px;
+}
 
-          @keyframes slideOut {
-            from {
-              opacity: 1;
-              transform: translateX(0);
-            }
-            to {
-              opacity: 0;
-              transform: translateX(100%);
-            }
-          }
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background: #222;
+  color: white;
+}
 
-          .notification-enter {
-            animation: slideIn 0.5s ease forwards;
-          }
+button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  background: #6e00ff;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
 
-          .notification-exit {
-            animation: slideOut 0.5s ease forwards;
-          }
-        `}
-      
+button:hover {
+  background: #8e2eff;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #aaa;
+}
+
+#aura {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: url('https://www.transparenttextures.com/patterns/cubes.png');
+  opacity: 0.05;
+  z-index: -1;
+}
