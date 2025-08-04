@@ -1,60 +1,50 @@
 body {
   margin: 0;
-  font-family: 'Orbitron', sans-serif;
-  background: radial-gradient(circle at center, #0a0a1a, #000010);
+  height: 100vh;
+  font-family: 'Gotham', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  overflow: hidden;
+  background: linear-gradient(-45deg, #2b0057, #6e00ff, #9b00ff, #2b0057);
+  background-size: 400% 400%;
+  animation: galaxyFlow 15s ease infinite;
+}
+
+@keyframes galaxyFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(20, 20, 40, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 0 20px #6e00ff88;
+  border-radius: 12px;
   text-align: center;
-  width: 300px;
+  box-shadow: 0 0 20px #6e00ff88;
 }
 
-input {
-  width: 90%;
-  padding: 10px;
-  margin: 10px 0;
-  border: none;
-  border-radius: 8px;
-  font-size: 16px;
+#keyBox {
   background: #222;
-  color: white;
+  color: #0ff;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  user-select: all;
 }
 
 button {
-  padding: 10px 20px;
-  margin: 10px 0;
   background: #6e00ff;
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 8px;
-  color: white;
-  font-size: 16px;
   cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
   background: #8e2eff;
-}
-
-.subtitle {
-  font-size: 14px;
-  color: #aaa;
-}
-
-#aura {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background: url('https://www.transparenttextures.com/patterns/cubes.png');
-  opacity: 0.05;
-  z-index: -1;
 }
