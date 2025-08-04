@@ -3,18 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CosmicVeil Gateway</title>
+  <title>CosmicVeil Key</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="aura"></div>
   <div class="container">
-    <h1>👑 CosmicVeil Gateway</h1>
-    <p class="subtitle">Enter your key to unlock the veil</p>
-    <input type="text" id="keyInput" placeholder="🔑 Enter your key..." />
-    <button onclick="validateKey()">✅ Submit</button>
-    <p id="status">🟡 Awaiting input...</p>
-    <button onclick="toggleCrown()">👑 Toggle Crown Mode</button>
+    <h1>🔐 CosmicVeil Key</h1>
+    <div id="keyBox">cosmicveil123</div>
+    <button onclick="copyKey()">📋 Copy Key</button>
+    <p id="status">🟡 Waiting...</p>
   </div>
   <script src="script.js"></script>
 </body>
